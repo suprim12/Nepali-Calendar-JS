@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nepal Calendar JS</title>
+    <style>
+        .eng-date {
+            font-size: 0.75rem;
+            color: #333;
+            margin: 0.2rem;
+        }
+
+        #calendar-body {
+            display: inline-table;
+        }
+
+        thead {
+            display: table;
+            width: 100%;
+        }
+
+        #calendar-body td {
+            padding: 1rem;
+            font-size: 1.2rem;
+            text-align: center;
+            border-left: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            transition: all 0.5s;
+        }
+
+        #calendar-body td:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        #calendar-body td.today {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calendar-container">
+        <div class="calendar-action">
+            <span id="monthandyear"></span>
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>SUN</th>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+    </div>
+    <script src="main-compressed.js"></script>
+</body>
+
+</html>
